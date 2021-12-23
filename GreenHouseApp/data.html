@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>The Greenhouse App</title>
+    <link href="new.css" rel="stylesheet" type="text/css" />
+    <link href="grid.css" rel="stylesheet" type="text/css" />
+    <link href="images.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <ul>
+                <li class="logo"><a href="index.html">App Home</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li>Data</li>
+                <li><a href="camera.html">Camera</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="largeImage" id="topImageFacilities">
+        <h1>Your Data</h1>
+    </div>
+
+    <div class="newdiv" id="dataMessage">
+        <h1>See How Your Greenhouse Is Performing</h1>
+        <p>At the Greenhouse App, we want to make sure that you are getting the best possible advantage in growing your 
+            fruit and veg.
+            <br><br>
+            We offer the opportunity to see the data that is coming back from your greenhouse in real-time. We use state
+            of the art technology to receive your data and display it to you at the click of a button.
+            <br><br>
+            Monitor your data throught the use of tools such a graphs, gauges, etc to ensure that you are getting the most
+            out of your greenhouse. This will allow your flora to gain the best possible advantage to grow big and strong.
+        </p>
+    </div>
+
+    <div class="row">
+        <h1>Live Data Feed</h1>
+        <div class="col" id="widget">
+            <iframe width="100%" height="100%" style="border: 1px solid #416a59;" src="https://thingspeak.com/channels/1587029/charts/1?bgcolor=%23f5eec2&color=%23416a59&dynamic=true&results=60&title=Temperature&type=line"></iframe>
+        </div>
+
+        <div class="col" id="widget">
+            <iframe width="100%" height="100%" style="border: 1px solid #416a59;" src="https://thingspeak.com/channels/1587029/charts/2?bgcolor=%23f5eec2&color=%23416a59&dynamic=true&results=60&title=Humidity&type=line"></iframe>
+        </div>
+
+        <div class="col" id="widget">
+            <iframe width="100%" height="100%" style="border: 1px solid #416a59;" src="https://thingspeak.com/channels/1587029/charts/3?bgcolor=%23f5eec2&color=%23416a59&days=1&dynamic=true&results=60&title=Pressure&type=line"></iframe>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="footer">
+            <ul><a href="privacy.html">Privacy Policy</a></ul>
+            <ul>Terms & Conditions</ul>
+            <ul><a href="contact.html">Contact Us</a></ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.contact {                          /*contact page*/
+    display: grid;
+    grid-template-columns: 5% 40% 5% 20% 5%;
+}
+
+#contact1 {                         /*contact page Where to find*/
+  grid-column-start: 2;
+}
+
+#contact2 {                         /*contact page map*/
+  grid-column-start: 4;
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: 10% 35% 10% 35% 10%;
+}
+
+.privacy {                          /*privacy page*/
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+#privacyPolicy {                         /*privacy*/
+  grid-column-start: 2;
+}
+
+
+
+

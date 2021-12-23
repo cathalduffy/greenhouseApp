@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>The Greenhouse App</title>
+  <link href="new.css" rel="stylesheet" type="text/css" />
+  <link href="grid.css" rel="stylesheet" type="text/css" />
+  <link href="images.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  function lightOn() {
+    $.ajax({
+      url: "http://f2dd-78-17-81-69.ngrok.io/sensehat/light?state=on",
+      type: "POST",
+      contentType: "application/json",
+      crossDomain : true,
+    });
+  }
+
+  function lightOff() {
+    $.ajax({
+      url: "http://f2dd-78-17-81-69.ngrok.io/sensehat/light?state=off",
+      type: "POST",
+      contentType: "application/json",
+      crossDomain : true,
+    });
+  }
+</script>
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <ul>
+        <li class="logo"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li>Camera</li>
+        <li><a href="pricing.html">Pricing</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <div class="largeImage" id="topImageCamera">
+    <h1>Contact</h1>
+  </div>
+
+  <div class=contact>
+    <div id=contact1>
+      <h1>See Your Greenhouse</h1>
+      <br>
+      <br>
+      <p>When you need to watch your greenhouse, we are here to help. Through the use of our camera surveillance system, you can view
+        your greenhouse whenever you would like, without ever having to leave your seat </p>
+      <br>
+      Check to see that your plants are doing okay
+      <br><br>
+      Ensure that no pesky plant eaters are affecting your crop
+      <br><br>
+      See how your fruit and veg is coming along
+      <br><br>
+
+      <form>
+        <input type="button" onclick="lightOn()" value="Light On">
+        <input type="button" onclick="lightOff()" value="Light Off">
+      </form>
+ </div>
+
+    <div id=contact2>
+      <img
+        src="http://94db-78-17-81-69.ngrok.io/stream.mjpg"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer">
+      <ul><a href="privacy.html">Privacy Policy</a></ul>
+      <ul>Terms & Conditions</ul>
+      <ul><a href="camera.html">Contact Us</a></ul>
+    </div>
+  </footer>
+</body>
+
+</html>
